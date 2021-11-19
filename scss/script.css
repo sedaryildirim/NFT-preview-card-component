@@ -60,10 +60,11 @@ body {
 }
 
 .container-image:hover {
+  opacity: 0.3;
   cursor: pointer;
 }
 
-.hover-image {
+.container-hover-image {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: container-image;
@@ -72,11 +73,6 @@ body {
   background: var(--cc-cyan-blue);
   padding: 7.1em;
   border-radius: 15px;
-  opacity: 0;
-}
-
-.hover-image:hover {
-  opacity: 0.3;
 }
 
 .main__body {
