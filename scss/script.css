@@ -46,6 +46,17 @@ body {
       grid-template-areas: "container-image" "main__body";
 }
 
+.container-hover-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: container-image;
+  content: url("../images/icon-view.svg");
+  cursor: pointer;
+  background: var(--cc-cyan-blue);
+  padding: 7.1em;
+  border-radius: 15px;
+}
+
 .container-image {
   position: relative;
   -ms-grid-row: 1;
@@ -60,19 +71,7 @@ body {
 }
 
 .container-image:hover {
-  opacity: 0.3;
-  cursor: pointer;
-}
-
-.container-hover-image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: container-image;
-  content: url("../images/icon-view.svg");
-  cursor: pointer;
-  background: var(--cc-cyan-blue);
-  padding: 7.1em;
-  border-radius: 15px;
+  opacity: 0.5;
 }
 
 .main__body {

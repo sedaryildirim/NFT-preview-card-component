@@ -50,7 +50,6 @@ Users should be able to:
 
 ### Continued development
 
-
 ### Useful resources
 
 - [Grid Lay It Out](https://grid.layoutit.com/) - Grid layouts & positioning

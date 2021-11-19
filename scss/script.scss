@@ -47,6 +47,15 @@ body {
     "main__body";
 }
 
+.container-hover-image {
+    grid-area: container-image;
+    content: url('../images/icon-view.svg');
+    cursor: pointer;
+    background: var(--cc-cyan-blue);
+    padding: 7.1em;
+    border-radius: 15px;
+}
+
 .container-image { 
     position: relative;
     grid-area: container-image;
@@ -60,19 +69,7 @@ body {
 }
 
 .container-image:hover {
-    opacity: 0.3;
-    cursor: pointer;
-    
-}
-
-.container-hover-image {
-    grid-area: container-image;
-    content: url('../images/icon-view.svg');
-    cursor: pointer;
-    background: var(--cc-cyan-blue);
-    padding: 7.1em;
-    border-radius: 15px;
-    
+    opacity: 0.5;
 }
 
 .main__body {
