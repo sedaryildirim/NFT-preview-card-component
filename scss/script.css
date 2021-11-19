@@ -46,18 +46,6 @@ body {
       grid-template-areas: "container-image" "main__body";
 }
 
-.container-hover-image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: container-image;
-  content: url("../images/icon-view.svg");
-  cursor: pointer;
-  background: var(--cc-cyan-blue);
-  padding: 7.1em;
-  border-radius: 15px;
-  z-index: 0;
-}
-
 .container-image {
   position: relative;
   -ms-grid-row: 1;
@@ -69,11 +57,22 @@ body {
   margin: 2em 2em 2em 2em;
   border-radius: 15px;
   cursor: pointer;
-  z-index: 1;
 }
 
 .container-image:hover {
-  opacity: 0.5;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.container-hover-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: container-image;
+  content: url("../images/icon-view.svg");
+  cursor: pointer;
+  background: var(--cc-cyan-blue);
+  padding: 7.1em;
+  border-radius: 15px;
 }
 
 .main__body {
