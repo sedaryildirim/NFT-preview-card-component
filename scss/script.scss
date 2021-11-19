@@ -19,17 +19,22 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--ff-outfit);
 }
 
 body {
     background-color: var(--cc-vdb-main-bg-);
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
 }
 
 .container {
-    margin: 4em 4em 4em 4em;
+    margin: 6em 2em 0em 2em;
     background-color: var(--cc-vdb-card-bg-);
+    border-radius: 15px;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -45,10 +50,86 @@ body {
 .container-image { 
     grid-area: container-image;
     content: url('/images/image-equilibrium.jpg');
-    max-width: 100%; // makes img fit grid
+    max-width: 90%; // makes img fit grid
     height: auto; // makes img fit grid
+    margin: 2em 2em 2em 2em;
+    border-radius: 15px;
 }
 
 .main__body {
     grid-area: main__body;
+}
+
+.header {
+    &--h1 {
+        color: white;
+        font-size: 1.5rem;
+        margin-left: 0.7em;
+        margin-bottom: 1em;
+    }
+    
+    &--p {
+        color: var(--cc-soft-blue-);
+        font-size: 1rem;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-evenly;
+    // justify-items: center;
+    align-content: center;
+    // align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+    &__p-etherum {
+        color: var(--cc-cyan-blue);
+        justify-self: flex-start;
+        padding-left: 0.5em;        
+    }
+    
+    &__p-days-left { 
+        padding-left: 0.5em;
+        justify-self: flex-end;
+        color: var(--cc-soft-blue-);
+    }
+
+    &__img-clock {
+        padding-left: 5.5em;
+    }
+}
+
+.border-line {
+    border: 1px solid var(--cc-vdb-line-bg-);
+    margin: 1em 1em 0em 1em;
+}
+
+.footer {
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
+
+    &__user-img {
+        content: url('../images/image-avatar.png');
+        border: 1px solid white;
+        border-radius: 50px;
+        aspect-ratio: 1; // resizes img with the below max width
+        max-width: 3rem;
+        justify-self: flex-start;
+        margin: 1em 1em 1em 1em;
+    }
+
+    &__p {
+        color: white;
+    }
+
+    &__span {
+        color: var(--cc-soft-blue-);
+    }
 }
