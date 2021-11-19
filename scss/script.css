@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --cc-soft-blue-: hsl(215, 51%, 70%);
+  --cc-cyan-blue:  hsl(178, 100%, 50%);
+  --cc-vdb-main-bg-: hsl(217, 54%, 11%);
+  --cc-vdb-card-bg-: hsl(216, 50%, 16%);
+  --cc-vdb-line-bg-: hsl(215, 32%, 27%);
+  --ff-outfit: 'Outfit', sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--cc-vdb-main-bg-);
+}
+
+.container {
+  margin: 4em 4em 4em 4em;
+  background-color: var(--cc-vdb-card-bg-);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "container-image" "main__body";
+}
+
+.container-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: container-image;
+  content: url("/images/image-equilibrium.jpg");
+  max-width: 100%;
+  height: auto;
+}
+
+.main__body {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main__body;
+}
+/*# sourceMappingURL=script.css.map */

@@ -1,0 +1,54 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+// font-family: 'Outfit', sans-serif;
+
+:root {
+    // Primary
+    --cc-soft-blue-: hsl(215, 51%, 70%);
+    --cc-cyan-blue:  hsl(178, 100%, 50%);
+    
+    // Neutral
+    --cc-vdb-main-bg-: hsl(217, 54%, 11%);
+    --cc-vdb-card-bg-: hsl(216, 50%, 16%);
+    --cc-vdb-line-bg-: hsl(215, 32%, 27%);
+    
+    // Fonts paragraph font-size: 18px; 
+    --ff-outfit: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cc-vdb-main-bg-);
+}
+
+.container {
+    margin: 4em 4em 4em 4em;
+    background-color: var(--cc-vdb-card-bg-);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "container-image"
+    "main__body";
+}
+
+.container-image { 
+    grid-area: container-image;
+    content: url('/images/image-equilibrium.jpg');
+    max-width: 100%; // makes img fit grid
+    height: auto; // makes img fit grid
+}
+
+.main__body {
+    grid-area: main__body;
+}
