@@ -31,7 +31,7 @@ body {
     background-color: var(--cc-vdb-card-bg-);
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 311px;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -45,13 +45,13 @@ body {
 }
 
 .container-image { 
-    position: relative;
     grid-area: container-image;
     content: url('/images/image-equilibrium.jpg');
     max-width: 90%; // makes img fit grid
     height: auto; // makes img fit grid
     margin: 2em 2em 2em 2em;
     border-radius: 15px;
+<<<<<<< HEAD
     cursor: pointer;
     
 }
@@ -72,6 +72,8 @@ body {
 
 .hover-image:hover {
     opacity: 0.3;
+=======
+>>>>>>> parent of d129e36 (index and styles updated, responsiveness added)
 }
 
 .main__body {
@@ -84,11 +86,6 @@ body {
         font-size: 1.5rem;
         margin-left: 0.7em;
         margin-bottom: 1em;
-    }
-    
-    &--h1:hover {
-        color: var(--cc-cyan-blue);
-        cursor: pointer;
     }
     
     &--p {
@@ -120,7 +117,7 @@ body {
         justify-self: flex-end;
         color: var(--cc-soft-blue-);
     }
-    
+
     &__img-clock {
         padding-left: 5.5em;
     }
@@ -132,12 +129,12 @@ body {
 }
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
+
     &__user-img {
         content: url('../images/image-avatar.png');
         border: 1px solid white;
@@ -147,16 +144,11 @@ body {
         justify-self: flex-start;
         margin: 1em 1em 1em 1em;
     }
-    
+
     &__p {
         color: white;
     }
-    
-    &__p:hover {
-        color: var(--cc-cyan-blue);
-        cursor: pointer;
-    }
-    
+
     &__span {
         color: var(--cc-soft-blue-);
     }
