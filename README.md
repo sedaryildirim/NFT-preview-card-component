@@ -36,9 +36,14 @@ Users should be able to:
 
 ## My process
 
+Had a lot of trouble with this challenge, mainly due to the fact that it was my first time
+overlaying an image onto another one - everything worked locally with responsively / live server
+however completly broke upon hitting github pages - took a break after 6 hours troubleshooting,
+had some sleepand came back restarted from scratch and focused on getting the img effect to work before anything else and managed to finish in 120mins roughly.
+
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 
 - CSS custom properties
 - CSS Grid
 - Flexbox
@@ -48,13 +53,13 @@ Users should be able to:
 
 ### What I learned
 
+How to overlay images on others, BEM naming structure (think i got it now)
+
 ### Continued development
 
 ### Useful resources
 
 - [Grid Lay It Out](https://grid.layoutit.com/) - Grid layouts & positioning
-- [Net Ninja](https://www.youtube.com/thenetninja) - HTML & CSS Tutorials
-- [Kevin Powell](https://www.youtube.com/kevinpowell) - HTML & CSS Tutorials
 
 ## Author
 
@@ -65,5 +70,4 @@ Users should be able to:
 ## Acknowledgments
 
 - [Frontendmentor.io](https://www.frontendmentor.io/)
-- [Net Ninja](https://www.youtube.com/thenetninja)
-- [Kevin Powell](https://www.youtube.com/kevinpowell)
+
