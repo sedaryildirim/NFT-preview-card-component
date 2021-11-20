@@ -16,12 +16,6 @@
 
 body {
   background-color: var(--cc-vdb-main-bg-);
-<<<<<<< HEAD
-=======
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  min-height: 90vh;
 }
 
 .container {
@@ -178,6 +172,5 @@ body {
 
 .footer__span {
   color: var(--cc-soft-blue-);
->>>>>>> parent of caeff53 (scss test fix)
 }
 /*# sourceMappingURL=script.css.map */
