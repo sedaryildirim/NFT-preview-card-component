@@ -14,12 +14,6 @@
   font-family: var(--ff-outfit);
 }
 
-@media (min-width: 320px) {
-  body {
-    padding: 1em;
-  }
-}
-
 body {
   background-color: var(--cc-vdb-main-bg-);
   display: -webkit-box;
@@ -35,7 +29,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 1em;
 }
 
 .card {
@@ -95,11 +90,6 @@ body {
 
 .header--title {
   color: white;
-}
-
-.header--title:hover {
-  color: var(--cc-cyan-blue);
-  cursor: pointer;
 }
 
 .header--paragraph {
@@ -170,12 +160,12 @@ body {
   color: var(--cc-soft-blue-);
 }
 
-.footer__span {
+a, a:visited, a:link, a:active {
   color: white;
+  text-decoration: none;
 }
 
-.footer__span:hover {
+a:hover {
   color: var(--cc-cyan-blue);
-  cursor: pointer;
 }
 /*# sourceMappingURL=script.css.map */
