@@ -24,133 +24,131 @@
 
 body {
     background-color: var(--cc-vdb-main-bg-);
-}
-
-.container {
-    margin: 6em 2em 0em 2em;
-    background-color: var(--cc-vdb-card-bg-);
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    grid-template-areas:
-    "container-image"
-    "main__body";
+    justify-content: center;
+    height: 100vh;
 }
 
-.container-image { 
-    grid-area: container-image;
-    content: url('/images/image-equilibrium.jpg');
-    max-width: 90%; // makes img fit grid
-    height: auto; // makes img fit grid
-    margin: 2em 2em 2em 2em;
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cc-vdb-card-bg-);
+    // align-items: center;
+    max-width: 20.5rem;
     border-radius: 15px;
-<<<<<<< HEAD
-    cursor: pointer;
     
+    &__hero {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 1.5em;
+    }
+    
+    &__hero--image {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    
+    &__image--overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('/images/icon-view.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.5s ease-in;
+    }
+    
+    &__image--overlay:hover {
+        opacity: 0.6;
+        background-color: var(--cc-cyan-blue);
+    }
 }
 
-.container-image:hover {
-    cursor: pointer;
-}
-
-.hover-image {
-    grid-area: container-image;
-    content: url('../images/icon-view.svg');
-    cursor: pointer;
-    background: var(--cc-cyan-blue);
-    padding: 7.1em;
-    border-radius: 15px;
-    opacity: 0;
-}
-
-.hover-image:hover {
-    opacity: 0.3;
-=======
->>>>>>> parent of d129e36 (index and styles updated, responsiveness added)
-}
-
-.main__body {
-    grid-area: main__body;
-}
 
 .header {
-    &--h1 {
-        color: white;
-        font-size: 1.5rem;
-        margin-left: 0.7em;
-        margin-bottom: 1em;
+    margin: 0em 1.5em 0em 1.5em;
+    font-size: 0.75rem;
+    &--title {
+        color:white;
     }
     
-    &--p {
+    &--title:hover {
+        color:var(--cc-cyan-blue);
+        cursor: pointer;
+    }
+    
+    &--paragraph{
+        font-size: 18px;
         color: var(--cc-soft-blue-);
-        font-size: 1rem;
-        margin-left: 1em;
-        margin-bottom: 1em;
+        margin: 1em 0em;
     }
 }
 
-.info {
+.main {
     display: flex;
     flex-direction: row;
-    // justify-content: space-evenly;
-    // justify-items: center;
-    align-content: center;
-    // align-items: center;
-    margin-left: 1em;
-    margin-right: 1em;
+    align-items: center;
+    justify-items: center;
     
-    &__p-etherum {
+    &__etherum  {
         color: var(--cc-cyan-blue);
-        justify-self: flex-start;
-        padding-left: 0.5em;        
+
+        &--icon {
+            margin-left: 1.5em;
+            margin-right: 0.5em;
+        }
     }
     
-    &__p-days-left { 
-        padding-left: 0.5em;
-        justify-self: flex-end;
+    &__clock {
         color: var(--cc-soft-blue-);
-    }
+        margin-right: 1.5em;
 
-    &__img-clock {
-        padding-left: 5.5em;
+        &--icon {
+            margin-left: 5.5em;
+            margin-right: 0.5em;
+        }
     }
 }
 
-.border-line {
+.line {
     border: 1px solid var(--cc-vdb-line-bg-);
-    margin: 1em 1em 0em 1em;
+    margin: 1em 1.5em 1em 1.5em;
 }
 
 .footer {
-   display: flex;
-   flex-direction: row;
-   align-content: center;
-   justify-items: center;
-   align-items: center;
-
-    &__user-img {
-        content: url('../images/image-avatar.png');
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 1.5em;
+   
+    &__user-image {
+        aspect-ratio: 1;
+        height: 40px;
         border: 1px solid white;
         border-radius: 50px;
-        aspect-ratio: 1; // resizes img with the below max width
-        max-width: 3rem;
-        justify-self: flex-start;
-        margin: 1em 1em 1em 1em;
+        margin-left: 1.5em;
+        margin-right: 1em;
     }
-
-    &__p {
-        color: white;
-    }
-
-    &__span {
+    
+    &__paragraph {
         color: var(--cc-soft-blue-);
     }
+    
+    &__span {
+        color: white;
+    }
+    &__span:hover {
+        color: var(--cc-cyan-blue);
+        cursor: pointer;
+    }
 }
-
