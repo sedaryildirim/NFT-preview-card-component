@@ -22,6 +22,12 @@
     font-family: var(--ff-outfit);
 }
 
+@media (min-width: 320px) {
+    body {
+        padding: 1em;
+    }
+}
+
 body {
     background-color: var(--cc-vdb-main-bg-);
     display: flex;
@@ -35,7 +41,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--cc-vdb-card-bg-);
-    // align-items: center;
     max-width: 20.5rem;
     border-radius: 15px;
     
