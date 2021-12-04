@@ -39,8 +39,8 @@ Users should be able to:
 
 Had a lot of trouble with this challenge, mainly due to the fact that it was my first time
 overlaying an image onto another one - everything worked locally with responsively / live server
-however completly broke upon hitting github pages - took a break after 6 hours troubleshooting,
-had some sleepand came back restarted from scratch and focused on getting the img effect to work before anything else and managed to finish in 120mins roughly.
+however completely broke upon hitting github pages - took a break after 6 hours troubleshooting,
+had some sleep and came back restarted from scratch and focused on getting the img effect to work before anything else and managed to finish in 120mins roughly.
 
 ### Built with
 
